@@ -23,25 +23,47 @@ body {
   color: red;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 10px;
-}
-
-.list li {
-  background: white;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  font-size: 18px;
+.books-row {
   display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.list li:nth-child(odd) {
-  background-color: pink;
+figure {
+  text-align: center;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.5);
 }
 
-.list li:nth-child(even) {
-  background-color: beige;
+.book-cover {
+  width: 140px;       
+  height: 210px;       
+  object-fit: cover;   
+  display: block;
 }
+
+.book-container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+  width: auto;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  opacity: 0;
+  padding: 100%;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.book-container:hover .overlay {
+  opacity: 1;
+}
+
