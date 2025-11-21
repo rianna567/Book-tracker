@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book tracker</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <div class="dropdown">
-        <button class="dropbtn">My books</button>
-        <div class="dropdown-content">
-          <a href="#completed">Completed</a>
-          <a href="#current">Currently reading</a>
-          <a href="#toread">To be read</a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book tracker</title>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">My books</button>
+      <div class="dropdown-content">
+        <a href="#completed">Completed</a>
+        <a href="#current">Currently reading</a>
+        <a href="#toread">To be read</a>
       </div>
     </div>
-    <section id="completed" class="completed-section hide-scroll">
-      <h2 class="section completed">Completed reading</h2>
+  </div>
+  <section id="completed">
+    <h2 class="section completed">Completed reading</h2>
+    <div class="completed-section hide-scroll">
 
       <div class="books-row">
         <div class="book-container">
-          <img
-            src="./images/agggtm.jpg"
-            class="book-cover"
-            alt="A good girl's guide to murder"
-          />
+          <img src="./images/agggtm.jpg" class="book-cover" alt="A good girl's guide to murder" />
           <div class="overlay">Rating<br />5/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/price.jpg"
-            class="book-cover"
-            alt="The reappearance of Rachel Price"
-          />
+          <img src="./images/price.jpg" class="book-cover" alt="The reappearance of Rachel Price" />
           <div class="overlay">Rating<br />4/5</div>
         </div>
         <div class="book-container">
@@ -43,11 +38,7 @@
           <div class="overlay">Rating<br />3/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/hp1.jpg"
-            class="book-cover"
-            alt="Harry potter and the Philoshoper's stone"
-          />
+          <img src="./images/hp1.jpg" class="book-cover" alt="Harry potter and the Philoshoper's stone" />
           <div class="overlay">Rating<br />5/5</div>
         </div>
         <div class="book-container">
@@ -55,11 +46,7 @@
           <div class="overlay">Rating<br />4/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/games.jpg"
-            class="book-cover"
-            alt="Twisted games"
-          />
+          <img src="./images/games.jpg" class="book-cover" alt="Twisted games" />
           <div class="overlay">Rating<br />5/5</div>
         </div>
         <div class="book-container">
@@ -67,106 +54,68 @@
           <div class="overlay">Rating<br />4/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/fivefeet.jpg"
-            class="book-cover"
-            alt="Twisted hate"
-          />
+          <img src="./images/fivefeet.jpg" class="book-cover" alt="Twisted hate" />
           <div class="overlay">Rating<br />4/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/ends.jpg"
-            class="book-cover"
-            alt="It ends with us"
-          />
+          <img src="./images/ends.jpg" class="book-cover" alt="It ends with us" />
           <div class="overlay">Rating<br />1/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/starts.jpg"
-            class="book-cover"
-            alt="It starts with us"
-          />
+          <img src="./images/starts.jpg" class="book-cover" alt="It starts with us" />
           <div class="overlay">Rating<br />2/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/sam.jpg"
-            class="book-cover"
-            alt="You've reached Sam"
-          />
+          <img src="./images/sam.jpg" class="book-cover" alt="You've reached Sam" />
           <div class="overlay">Rating<br />5/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/ggbb.jpg"
-            class="book-cover"
-            alt="Good girl, Bad blood"
-          />
+          <img src="./images/ggbb.jpg" class="book-cover" alt="Good girl, Bad blood" />
           <div class="overlay">Rating<br />5/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/agad.jpg"
-            class="book-cover"
-            alt="As good as dead"
-          />
+          <img src="./images/agad.jpg" class="book-cover" alt="As good as dead" />
           <div class="overlay">Rating<br />5/5</div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="current" class="current-section hide-scroll">
-      <h2 class="section reading">Currently reading</h2>
-      <div class="books-row">
-        <div class="book-container">
-          <img
-            src="./images/bookstore.jpg"
-            class="book-cover"
-            alt="Muder at the bookstore"
-          />
-          <div class="overlay">Progress<br />11/394</div>
-        </div>
+  <section id="current" class="current-section hide-scroll">
+    <h2 class="section reading">Currently reading</h2>
+    <div class="books-row">
+      <div class="book-container">
+        <img src="./images/bookstore.jpg" class="book-cover" alt="Muder at the bookstore" />
+        <div class="overlay">Progress<br />11/394</div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="toread" class="to-read-section hide-scroll">
-      <h2 class="section to-read">To be read</h2>
-      <div class="books-row">
-        <div class="book-container">
-          <img
-            src="./images/thorn.jpg"
-            class="book-cover"
-            alt="A Court of Thorn and Roses"
-          />
-          <div class="overlay">Status<br />Bought</div>
-        </div>
-        <div class="book-container">
-          <img
-            src="./images/eliza.jpg"
-            class="book-cover"
-            alt="Eliza and her monsters"
-          />
-          <div class="overlay">Status<br />Bought</div>
-        </div>
-        <div class="book-container">
-          <img
-            src="./images/lying.jpg"
-            class="book-cover"
-            alt="One of us is lying"
-          />
-          <div class="overlay">Status<br />To get</div>
-        </div>
-        <div class="book-container">
-          <img src="./images/lies.jpg" class="book-cover" alt="Twisted lies" />
-          <div class="overlay">Status<br />Bought</div>
-        </div>
-        <div class="book-container">
-          <img src="./images/five.jpg" class="book-cover" alt="Five Survive" />
-          <div class="overlay">Status<br />Bought</div>
-        </div>
+  <section id="toread" class="to-read-section hide-scroll">
+    <h2 class="section to-read">To be read</h2>
+    <div class="books-row">
+      <div class="book-container">
+        <img src="./images/thorn.jpg" class="book-cover" alt="A Court of Thorn and Roses" />
+        <div class="overlay">Status<br />Bought</div>
       </div>
-    </section>
-  </body>
+      <div class="book-container">
+        <img src="./images/eliza.jpg" class="book-cover" alt="Eliza and her monsters" />
+        <div class="overlay">Status<br />Bought</div>
+      </div>
+      <div class="book-container">
+        <img src="./images/lying.jpg" class="book-cover" alt="One of us is lying" />
+        <div class="overlay">Status<br />To get</div>
+      </div>
+      <div class="book-container">
+        <img src="./images/lies.jpg" class="book-cover" alt="Twisted lies" />
+        <div class="overlay">Status<br />Bought</div>
+      </div>
+      <div class="book-container">
+        <img src="./images/five.jpg" class="book-cover" alt="Five Survive" />
+        <div class="overlay">Status<br />Bought</div>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>

@@ -1,0 +1,7 @@
+@import url("./navbar.css");
+@import url("./books.css");
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
