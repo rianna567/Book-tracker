@@ -1,185 +1,158 @@
-@import url("./books.css");
-
-html,
-body {
-  overflow-x: auto;
-
-  width: 100%;
-
-  max-width: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: "Comic Neue", cursive;
-  font-style: normal;
-}
-
-h2,
-.nav-link,
-.navbar-brand {
-  font-weight: 700;
-}
-
 #completed,
 #current,
 #to-read,
 #to-buy {
-  padding-top: 0;
-  margin-bottom: 20px;
+    padding-top: 0;
+    margin-bottom: 20px;
 }
 
 #completed {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
 .completed-title,
 .reading-title,
 .to-read-title,
 .to-buy-title {
-  padding-left: 10px;
-  font-size: 24px;
+    padding-left: 10px;
+    font-size: 24px;
 
 }
 
 .completed-title {
-  color: green;
+    color: green;
 }
 
 .reading-title {
-  color: orange;
+    color: orange;
 }
 
 .to-read-title {
-  color: red;
+    color: red;
 }
 
 .to-buy-title {
-  color: blueviolet;
+    color: blueviolet;
 }
 
 .completed-div,
 .current-div,
 .to-read-div,
 .to-buy-div {
-  overflow-x: scroll;
-  display: flex;
-  flex-direction: column;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 .hide-scroll::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scroll {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .birthday-countdown {
-  background: linear-gradient(135deg,
-      #ffcad4,
-      #f4acb7);
-  color: #5c2a2a;
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.12);
-  min-width: 280px;
-  gap: 4px;
+    background: linear-gradient(135deg,
+            #ffcad4,
+            #f4acb7);
+    color: #5c2a2a;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.12);
+    min-width: 280px;
+    gap: 4px;
 }
 
 .books-row {
-  display: flex;
-
-  flex-wrap: nowrap;
-
-  overflow-x: auto;
-
-  width: max-content;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
 }
 
 .book-container {
-  position: relative;
+    position: relative;
+    height: 220px;
+    width: 140px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 
-  height: 220px;
-  width: 140px;
-
-  flex-shrink: 0;
-
-  box-shadow:
-    5px 5px 10px rgba(0, 0, 0, 0.5);
-
-  border-radius: 5px;
 }
 
 .book-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  text-align: center;
-  position: absolute;
-  border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    text-align: center;
+    position: absolute;
+    border-radius: 5px;
 
 }
 
 .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  color: white;
-  opacity: 0;
-  transition: 0.4s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 5px;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    opacity: 0;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
 
 }
 
 .series-badge {
-  position: absolute;
+    position: absolute;
 
-  top: 10px;
-  left: 10px;
+    top: 10px;
+    left: 10px;
 
-  z-index: 30;
+    z-index: 30;
 
-  background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.75);
 
-  color: white;
+    color: white;
 
-  padding: 5px 12px;
+    padding: 5px 12px;
 
-  border-radius: 20px;
+    border-radius: 20px;
 
-  font-size: 11px;
+    font-size: 11px;
 
-  font-weight: bold;
+    font-weight: bold;
 
-  letter-spacing: 1px;
+    letter-spacing: 1px;
 
-  backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 
-  box-shadow:
-    0 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .book-container:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 
