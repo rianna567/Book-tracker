@@ -28,19 +28,19 @@ body {
 }
 
 .completed-title {
-  color: #4f7c65;
+  color: #7fb89b;
 }
 
 .reading-title {
-  color: #c58b4f;
+  color: #d8a873;
 }
 
 .to-read-title {
-  color: #9c5f5f;
+  color: #d48b8b;
 }
 
 .to-buy-title {
-  color: #7d6aa5;
+  color: #b59ad6;
 }
 
 .completed-div,
