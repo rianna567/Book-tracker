@@ -156,20 +156,33 @@
 }
 
 
-/* for screen sizes above 720px */
-@media screen and (min-width: 481px) and (max-width: 720px) {
+/* Mobile */
+@media screen and (max-width: 480px) {
     .books-row {
-        gap: 40px;
-    }
-}
-
-/* for screen sized above 720px */
-@media screen and (min-width: 721px) {
-    .books-row {
-        gap: 100px;
+        gap: 20px;
     }
 
     .book-container {
-        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+        width: 120px;
+        height: 200px;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    .books-row {
+        gap: 30px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 721px) {
+    .books-row {
+        gap: 40px;
+    }
+
+    .book-container {
+        box-shadow:
+            5px 5px 20px rgba(0, 0, 0, 0.35);
     }
 }
