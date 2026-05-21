@@ -29,17 +29,22 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="./index.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               My books
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#completed">Completed</a></li>
               <li><a class="dropdown-item" href="#current">Currently reading</a></li>
               <li><a class="dropdown-item" href="#to-read">To be read</a></li>
+              <li><a class="dropdown-item" href="#to-buy">To buy</a></li>
             </ul>
           </li>
         </ul>
       </div>
+    </div>
+    <div class="birthday-countdown" id="birthdayCountdown">
+      🎁 Loading...
     </div>
   </nav>
   <section id="completed">
@@ -47,13 +52,7 @@
     <div class="completed-div hide-scroll">
 
       <div class="books-row">
-        <div class="book-container">
-          <img src="./images/agggtm.jpg" alt="A good girl's guide to murder" />
-          <div class="overlay">
-            <span>Rating</span>
-            <span>5/5</span>
-          </div>
-        </div>
+
         <div class="book-container">
           <img src="./images/price.jpg" alt="The reappearance of Rachel Price" />
           <div class="overlay">
@@ -69,6 +68,9 @@
           </div>
         </div>
         <div class="book-container">
+          <span class="series-badge">
+            Harry Potter
+          </span>
           <img src="./images/hp1.jpg" alt="Harry potter and the Philoshoper's stone" />
           <div class="overlay">
             <span>Rating</span>
@@ -76,6 +78,70 @@
           </div>
         </div>
         <div class="book-container">
+          <span class="series-badge">
+            Harry Potter
+          </span>
+          <img src="./images/hp2.jpg" alt="Harry potter and the Chamber of secrets" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>5/5</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Harry Potter
+          </span>
+          <img src="./images/hp3.jpg" alt="Harry potter and the Prisoner of Azkaban" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>5/5</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Harry Potter
+          </span>
+          <img src="./images/hp4.jpg" alt="Harry potter and the Goblet of Fire" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>5/5</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Harry Potter
+          </span>
+          <img src="./images/hp5.jpg" alt="Harry potter and the Order of Pheonix" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>5/5</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Harry Potter
+          </span>
+          <img src="./images/hp6.jpg" alt="Harry potter and the Half-blodd Prince" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>5/5</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Harry Potter
+          </span>
+          <img src="./images/hp7.jpg" alt="Harry potter and the Deathly Hallows" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>5/5</span>
+          </div>
+        </div>
+
+        <div class="book-container">
+          <span class="series-badge">
+            Twisted
+          </span>
           <img src="./images/love.jpg" alt="Twisted love" />
           <div class="overlay">
             <span>Rating</span>
@@ -83,6 +149,9 @@
           </div>
         </div>
         <div class="book-container">
+          <span class="series-badge">
+            Twisted
+          </span>
           <img src="./images/games.jpg" alt="Twisted games" />
           <div class="overlay">
             <span>Rating</span>
@@ -90,6 +159,9 @@
           </div>
         </div>
         <div class="book-container">
+          <span class="series-badge">
+            Twisted
+          </span>
           <img src="./images/hate.jpg" alt="Twisted hate" />
           <div class="overlay">
             <span>Rating</span>
@@ -104,6 +176,9 @@
           </div>
         </div>
         <div class="book-container">
+          <span class="series-badge">
+            With us
+          </span>
           <img src="./images/ends.jpg" alt="It ends with us" />
           <div class="overlay">
             <span>Rating</span>
@@ -111,6 +186,9 @@
           </div>
         </div>
         <div class="book-container">
+          <span class="series-badge">
+            With us
+          </span>
           <img src="./images/starts.jpg" alt="It starts with us" />
           <div class="overlay">
             <span>Rating</span>
@@ -125,6 +203,19 @@
           </div>
         </div>
         <div class="book-container">
+          <span class="series-badge">
+            AGGGTM
+          </span>
+          <img src="./images/agggtm.jpg" alt="A good girl's guide to murder" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>5/5</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            AGGGTM
+          </span>
           <img src="./images/ggbb.jpg" alt="Good girl, Bad blood" />
           <div class="overlay">
             <span>Rating</span>
@@ -132,14 +223,40 @@
           </div>
         </div>
         <div class="book-container">
+          <span class="series-badge">
+            AGGGTM
+          </span>
           <img src="./images/agad.jpg" alt="As good as dead" />
           <div class="overlay">
             <span>Rating</span>
             <span>5/5</span>
           </div>
         </div>
+        <div class="book-container">
+          <img src="./images/five.jpg" alt="Five Survive" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>5/5</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Court
+          </span>
+          <img src="./images/thorn.jpg" alt="A Court of Thorn and Roses" />
+          <div class="overlay">
+            <span>Rating</span>
+            <span>4/5</span>
+          </div>
+          <div class="book-container">
+            <img src="./images/roommate.jpg" alt="The American Roommate Experience" />
+            <div class="overlay">
+              <span>Rating</span>
+              <span>4/5</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
 
   <section id="current">
@@ -148,12 +265,16 @@
 
       <div class="books-row">
         <div class="book-container">
-          <img src="./images/bookstore.jpg" alt="Muder at the bookstore" />
+          <span class="series-badge">
+            Court
+          </span>
+          <img src="./images/mist.jpg" alt="A court of Mist and Fury" />
           <div class="overlay">
             <span>Progress</span>
-            <span>11/345</span>
+            <span>455/656</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -164,45 +285,262 @@
 
       <div class="books-row">
         <div class="book-container">
-          <img src="./images/thorn.jpg" alt="A Court of Thorn and Roses" />
+          <img src="./images/silent.jpg" alt="The Silent Patient" />
           <div class="overlay">
-            <span>Status</span>
-            <span>Bought</span>
+            <span>Priority to read</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Twisted
+          </span>
+          <img src="./images/lies.jpg" alt="Twisted lies" />
+          <div class="overlay">
+            <span>Priority to read</span>
+            <span>⭐⭐⭐</span>
           </div>
         </div>
         <div class="book-container">
           <img src="./images/eliza.jpg" alt="Eliza and her monsters" />
           <div class="overlay">
-            <span>Status</span>
-            <span>Bought</span>
+            <span>Priority to read</span>
+            <span>⭐⭐</span>
           </div>
         </div>
         <div class="book-container">
-          <img src="./images/lying.jpg" alt="One of us is lying" />
+          <img src="./images/bookstore.jpg" alt="Murder at the Bookstore" />
           <div class="overlay">
-            <span>Status</span>
-            <span>To get</span>
+            <span>Priority to read</span>
+            <span>⭐⭐</span>
           </div>
         </div>
         <div class="book-container">
-          <img src="./images/lies.jpg" alt="Twisted lies" />
+          <span class="series-badge">
+            Court
+          </span>
+          <img src="./images/wings.jpg" alt="A Court of Wings and Ruins" />
           <div class="overlay">
-            <span>Status</span>
-            <span>Bought</span>
+            <span>Priority to read</span>
+            <span>⭐⭐</span>
           </div>
         </div>
         <div class="book-container">
-          <img src="./images/five.jpg" alt="Five Survive" />
+          <span class="series-badge">
+            Court
+          </span>
+          <img src="./images/frost.jpg" alt="A Court of Frost and Starlight" />
           <div class="overlay">
-            <span>Status</span>
-            <span>Bought</span>
+            <span>Priority to read</span>
+            <span>⭐⭐</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Court
+          </span>
+          <img src="./images/silver.jpg" alt="A Court of Wings and Ruins" />
+          <div class="overlay">
+            <span>Priority to read</span>
+            <span>⭐⭐</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Adeline
+          </span>
+          <img src="./images/haunt.jpg" alt="Haunting Adeline" />
+          <div class="overlay">
+            <span>Priority to read</span>
+            <span>⭐⭐</span>
+          </div>
+        </div>
+        <div class="book-container">
+          <span class="series-badge">
+            Adeline
+          </span>
+          <img src="./images/hunt.jpg" alt="Hunting Adeline" />
+          <div class="overlay">
+            <span>Priority to read</span>
+            <span>⭐⭐</span>
           </div>
         </div>
       </div>
   </section>
+
+  <section id="to-buy">
+    <h2 class="to-buy-title">To buy</h2>
+    <div class="to-buy-div hide-scroll">
+
+      <div class="books-row">
+        <div class="book-container">
+          <img src="./images/dead.jpg" alt="Not Quite Dead Yet" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+
+        <div class="book-container">
+          <span class="series-badge">
+            One of us
+          </span>
+          <img src="./images/lying.jpg" alt="One of us is Lying" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="book-container">
+          <span class="series-badge">
+            One of us
+          </span>
+          <img src="./images/next.jpg" alt="One of us is Next" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="book-container">
+          <span class="series-badge">
+            One of us
+          </span>
+          <img src="./images/back.jpg" alt="One of us is Back" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="book-container">
+          <img src="./images/tokyo.jpg" alt="The Tokyo Zodiac Murders" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="book-container">
+          <img src="./images/never.jpg" alt="Never Lie" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="book-container">
+          <img src="./images/perfect.jpg" alt="The Perfect Marriage" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="book-container">
+          <img src="./images/he.jpg" alt="If he had been with me" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="book-container">
+          <img src="./images/seven.jpg" alt="The Seven Year Slip" />
+          <div class="overlay">
+            <span>Priority to buy</span>
+            <span>⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script>
+
+    function updateCountdown() {
+
+      const today = new Date();
+
+      const currentYear =
+        today.getFullYear();
+
+      /* CHANGE YOUR BDAY HERE */
+
+      let birthday = new Date(
+        currentYear,
+        5,
+        5,
+        0,
+        0,
+        0
+      );
+
+      /* If birthday already passed */
+
+      if (today > birthday) {
+
+        birthday = new Date(
+          currentYear + 1,
+          5,
+          5,
+          0,
+          0,
+          0
+        );
+      }
+
+      const diff =
+        birthday - today;
+
+      const days =
+        Math.floor(
+          diff /
+          (1000 * 60 * 60 * 24)
+        );
+
+      const hours =
+        Math.floor(
+          (diff %
+            (1000 * 60 * 60 * 24)) /
+          (1000 * 60 * 60)
+        );
+
+      const minutes =
+        Math.floor(
+          (diff %
+            (1000 * 60 * 60)) /
+          (1000 * 60)
+        );
+
+      const seconds =
+        Math.floor(
+          (diff %
+            (1000 * 60)) /
+          1000
+        );
+
+      document.getElementById(
+        "birthdayCountdown"
+      ).innerHTML =
+        `🎁 Get me books before the timer runs out! ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    }
+
+    /* Update every second */
+
+    setInterval(
+      updateCountdown,
+      1000
+    );
+
+    updateCountdown();
+
+  </script>
 </body>
 
 </html>

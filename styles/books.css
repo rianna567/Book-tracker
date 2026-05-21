@@ -1,6 +1,7 @@
 #completed,
 #current,
-#to-read {
+#to-read,
+#to-buy {
     padding-top: 0;
     margin-bottom: 20px;
 }
@@ -11,7 +12,8 @@
 
 .completed-title,
 .reading-title,
-.to-read-title {
+.to-read-title,
+.to-buy-title {
     padding-left: 10px;
     font-size: 24px;
 
@@ -29,10 +31,14 @@
     color: red;
 }
 
+.to-buy-title {
+    color: blueviolet;
+}
 
 .completed-div,
 .current-div,
-.to-read-div {
+.to-read-div,
+.to-buy-div {
     overflow-x: scroll;
     display: flex;
     flex-direction: column;
@@ -48,6 +54,26 @@
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+}
+
+.birthday-countdown {
+    background: linear-gradient(135deg,
+            #ffcad4,
+            #f4acb7);
+    color: #5c2a2a;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.12);
+    min-width: 280px;
+    gap: 4px;
 }
 
 .books-row {
@@ -95,6 +121,34 @@
     text-align: center;
     border-radius: 5px;
 
+}
+
+.series-badge {
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    z-index: 30;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    color: white;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    backdrop-filter: blur(5px);
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .book-container:hover .overlay {
