@@ -186,28 +186,33 @@ h2,
 @media screen and (max-width: 480px) {
 
   .book-container {
-    width: 220px;
-    height: 330px;
+    width: 140px;
+
+    height: 220px;
 
     flex-shrink: 0;
   }
 
   .books-row {
-    gap: 24px;
+    gap: 18px;
+
+    padding-bottom: 5px;
   }
 
   .completed-title,
   .reading-title,
   .to-read-title,
   .to-buy-title {
-    font-size: 28px;
+    font-size: 18px;
+
+    padding-left: 10px;
   }
 
   .birthday-countdown {
-    min-width: 220px;
+    min-width: 170px;
 
-    font-size: 12px;
+    font-size: 10px;
 
-    padding: 10px 14px;
+    padding: 8px 12px;
   }
 }
