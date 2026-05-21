@@ -156,20 +156,24 @@
 }
 
 
-/* for screen sizes above 720px */
-@media screen and (min-width: 481px) and (max-width: 720px) {
-    .books-row {
-        gap: 40px;
-    }
-}
+/* MOBILE */
 
-/* for screen sized above 720px */
-@media screen and (min-width: 721px) {
-    .books-row {
-        gap: 100px;
-    }
+@media screen and (max-width: 480px) {
 
     .book-container {
-        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+        width: 180px;
+
+        height: 280px;
+    }
+
+    .books-row {
+        gap: 30px;
+    }
+
+    .completed-title,
+    .reading-title,
+    .to-read-title,
+    .to-buy-title {
+        font-size: 28px;
     }
 }
