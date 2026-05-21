@@ -19,31 +19,28 @@ body {
 .to-read-title,
 .to-buy-title {
   padding-left: 10px;
-
   font-size: 22px;
-
   font-weight: 700;
-
   letter-spacing: 0.3px;
-
+  transition: color 0.3s ease;
   text-shadow:
     0 2px 5px rgba(0, 0, 0, 0.12);
 }
 
 .completed-title {
-  color: green;
+  color: #4f7c65;
 }
 
 .reading-title {
-  color: orange;
+  color: #c58b4f;
 }
 
 .to-read-title {
-  color: red;
+  color: #9c5f5f;
 }
 
 .to-buy-title {
-  color: blueviolet;
+  color: #7d6aa5;
 }
 
 .completed-div,
